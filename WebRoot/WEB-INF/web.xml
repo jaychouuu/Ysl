@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <context-param>
+    <param-name>global_i</param-name>
+    <param-value>10</param-value>
+  </context-param>
+  <context-param>
+    <param-name>global_j</param-name>
+    <param-value>20</param-value>
+  </context-param>
+  <filter>
+    <filter-name>Filter_Encoding</filter-name>
+    <filter-class>com.filter.Filter_Encoding</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>Filter_Encoding</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  
+   <filter>
+    <filter-name>Filter_IsLogin</filter-name>
+    <filter-class>com.filter.Filter_IsLogin</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>Filter_IsLogin</filter-name>
+    <url-pattern>/admin/*</url-pattern>
+    <url-pattern>/front/user/*</url-pattern>
+    
+    
+    <dispatcher>REQUEST</dispatcher>
+    <dispatcher>FORWARD</dispatcher>
+</filter-mapping> 
+
+  
+
+  <servlet>
+    <servlet-name>UserServlet</servlet-name>
+    <servlet-class>com.servlet.UserServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UploadServlet</servlet-name>
+    <servlet-class>com.servlet.UploadServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DownloadServlet</servlet-name>
+    <servlet-class>com.servlet.DownloadServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ClassInfoServlet</servlet-name>
+    <servlet-class>com.servlet.ClassInfoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserServlet</servlet-name>
+    <url-pattern>/servlet/UserServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UploadServlet</servlet-name>
+    <url-pattern>/servlet/UploadServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DownloadServlet</servlet-name>
+    <url-pattern>/servlet/DownloadServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AjaxTestServlet</servlet-name>
+    <url-pattern>/servlet/AjaxTestServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AjaxTextServlet</servlet-name>
+    <url-pattern>/servlet/AjaxTextServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AjaxMailServlet</servlet-name>
+    <url-pattern>/servlet/AjaxMailServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AjaxXmlSevlet</servlet-name>
+    <url-pattern>/servlet/AjaxXmlSevlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AjaxJsonServlet</servlet-name>
+    <url-pattern>/servlet/AjaxJsonServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AjaxJQueryServlet</servlet-name>
+    <url-pattern>/servlet/AjaxJQueryServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ClassInfoServlet</servlet-name>
+    <url-pattern>/servlet/ClassInfoServlet</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+ 
+    <servlet-name>ItemServlet</servlet-name>
+    <servlet-class>com.servlet.ItemServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>OrderServlet</servlet-name>
+    <servlet-class>com.servlet.OrderServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FrontServlet</servlet-name>
+    <servlet-class>com.servlet.FrontServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CartServlet</servlet-name>
+    <servlet-class>com.servlet.CartServlet</servlet-class>
+  </servlet>
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>ItemServlet</servlet-name>
+    <url-pattern>/servlet/ItemServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/servlet/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OrderServlet</servlet-name>
+    <url-pattern>/servlet/OrderServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FrontServlet</servlet-name>
+    <url-pattern>/servlet/FrontServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CartServlet</servlet-name>
+    <url-pattern>/servlet/CartServlet</url-pattern>
+  </servlet-mapping>
+</web-app>

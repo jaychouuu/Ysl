@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+	<student id="1">
+		<stu_name>张三</stu_name>
+		<stu_age>21</stu_age>
+		<stu_sex>男</stu_sex>
+		<stu_content><![CDATA[ 1+2<3&*(&^&^123]]></stu_content>
+	</student>
+	<!-- 这是注释节点 -->
+	<student id="2">
+		<stu_name>名称更新</stu_name>
+		<stu_age>22</stu_age>
+		<stu_sex>女</stu_sex>
+		<stu_content><![CDATA[这22222%^&特殊字符]]></stu_content>
+	</student>
+
+</root>

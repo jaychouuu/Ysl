@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<classinfo>
+		<classid>3</classid>
+		<classname>NOKIA</classname>
+		<parentid>1</parentid>
+	</classinfo>
+	<classinfo>
+		<classid>4</classid>
+		<classname>IPhone4</classname>
+		<parentid>1</parentid>
+	</classinfo>
+	<classinfo>
+		<classid>5</classid>
+		<classname>MOTO</classname>
+		<parentid>1</parentid>
+	</classinfo>
+	<classinfo>
+		<classid>6</classid>
+		<classname>三星</classname>
+		<parentid>1</parentid>
+	</classinfo>
+</root>
